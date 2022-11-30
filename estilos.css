@@ -11,6 +11,7 @@ header{
         background-position: center;
         background-size: cover;
         height: 250px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items:flex-end;
@@ -20,14 +21,14 @@ header{
             justify-content: center;
             gap: 20px;
             width: 100%;
-            padding: 5px 0;
+            padding: 15px 0;
             border-top: .5px solid white;
             background-color: rgba(44, 2, 28, 0.39);
         }
         .nav a{
             text-decoration: none;
             color: white;
-            font-size: 14px;
+            font-size: 18px;
             text-transform: uppercase;
         }
             .page{
@@ -36,35 +37,117 @@ header{
                 justify-content: center;
                 align-items:center;
             }
-            .page:hover{
-                background-color: rgba(163, 28, 62, 0.993);
+            .page a:hover{
+                color:rgb(255, 0, 0);
             }
 .row{
     display: flex;
-    padding:50px 200px;
+    padding:50px;
 }
     section{
         display: flex;
         flex-wrap: wrap;
-        flex:7;
+        justify-content: center;
+        width: 100%;
+        margin-right: 25px;
+
     }
         .elemento{
             margin: 0 5px;
             margin-bottom: 10px;
+            
         }
         .elemento img{
-           width: 100%;
+            width: 100%;
+            height: auto;
         }
     aside{
         background-color: rgb(121, 0, 50);
-        flex: 1;
-    }
-    aside h4{
-        text-align: center;
+        width: 450px;
+        height: auto;
+        margin-left: 25px;
         color: white;
-        font-size: 18px;
     }
-    aside p{
+    .titulo{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .subtitulo{
+        padding: 5px 10px;
+        font-size: 24px;
+    }
+    .enlace{
         padding: 0 10px;
+        
+    }
+    .enlace a{
+        text-decoration: none;
+        color: wheat;
+        font-size: 24px;
+    }
+    .foto{
+        display: flex;
+        margin: 5px 10px;
+        justify-content: center;
+    }
+    .caja{
+        border: 1px solid wheat;
+        padding: 5px 10px;
+        margin: 5px 10px;
+        font-size: 20px;
+        text-align: center;
+        color: w;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 20%;
+        background-color: rgb(22, 22, 22);
+        height: 200px;
+    }
+    .columna{
+    }
+    .columna a{
+        font-size: 20px;
+        padding: 15px 0;
+        text-decoration: none;
         color: white;
     }
+    .columna a:hover{
+        color: rgb(255, 0, 0);
+    }
+    .copy{
+        background-color: black;
+        height: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media all and (max-width: 1450px){
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        aside{
+            padding-bottom: 50px;
+            margin: 0;
+        }
+        section{
+            margin: 0;
+        }
+
+    }
+    @media all and (max-width: 800px){
+        .nav{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
